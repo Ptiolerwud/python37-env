@@ -1,0 +1,19 @@
+{
+  "id": "python37-env",
+  "name": "Python 3.7 Virtual Env",
+  "description": "Создаёт виртуальную среду с Python 3.7 через Miniconda.",
+  "scripts": {
+    "install": {
+      "os": ["windows"],
+      "cmd": [
+        "install.bat"
+      ]
+    },
+    "run": {
+      "os": ["windows"],
+      "cmd": [
+        "cmd /k "call %USERPROFILE%\miniconda3\Scripts\activate.bat py37 && python --version""
+      ]
+    }
+  }
+}
